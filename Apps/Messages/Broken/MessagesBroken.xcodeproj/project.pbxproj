@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = "1";
+	classes = {
+	};
+	objectVersion = "77";
+	objects = {
+		"16AC145DB24D17645E4C5B84" = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ../../Common;
+			sourceTree = "<group>";
+		};
+		"26D47EACB733A20609261200" = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = "2147483647";
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = "0";
+		};
+		"2C31A6640B0652490087541B" = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.siriready.messages.broken;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MessagesBroken;
+				MARKETING_VERSION = "1.0";
+				CURRENT_PROJECT_VERSION = "1";
+				ENABLE_PREVIEWS = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Debug;
+		};
+		"303558A338A8199841A96775" = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = "2147483647";
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = "0";
+		};
+		"4091C9315BE601E51196EA1B" = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.siriready.messages.broken.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				GENERATE_INFOPLIST_FILE = YES;
+				TEST_TARGET_NAME = MessagesBroken;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				MARKETING_VERSION = "1.0";
+				CURRENT_PROJECT_VERSION = "1";
+			};
+			name = Release;
+		};
+		"453880F38B8236986C3F813B" = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "8838294A5A4C8B61EF3A83AA";
+			buildPhases = (
+				"303558A338A8199841A96775",
+				E7ABE275EEE820F2C832A9D8,
+				"88CD00108856EB54646FBA1B",
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5D63AC641F7E417164563D1,
+			);
+			fileSystemSynchronizedGroups = (
+				A79058D7E43720567F6AC384,
+			);
+			name = MessagesBrokenUITests;
+			productName = MessagesBrokenUITests;
+			productReference = BE3C6D84A0C7E02547FE10A5;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		"4A707AB20C5B3FC3001236BC" = {
+			isa = PBXGroup;
+			children = (
+				D8A82BE468C048EC405ED929,
+				A79058D7E43720567F6AC384,
+				E4D4EB57818E1D3D01054581,
+				"16AC145DB24D17645E4C5B84",
+				F6DCA4F911F73D5448295D60,
+			);
+			sourceTree = "<group>";
+		};
+		"4D0EFC0BA2380552DBDFF9AC" = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = "2147483647";
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = "0";
+		};
+		"60B1F58D5396FB8CE09A48A8" = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = "27.0";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = "5.0";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				ONLY_ACTIVE_ARCH = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				ENABLE_TESTABILITY = NO;
+			};
+			name = Release;
+		};
+		"66ADF36DDC56A63A694AA9DB" = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = "27.0";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = "5.0";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				ENABLE_TESTABILITY = YES;
+			};
+			name = Debug;
+		};
+		"70E701A7CBE19616E50D2FF1" = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = "2147483647";
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = "0";
+		};
+		"8838294A5A4C8B61EF3A83AA" = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"90EBA728E921BE16435A1E76",
+				"4091C9315BE601E51196EA1B",
+			);
+			defaultConfigurationIsVisible = "0";
+			defaultConfigurationName = Release;
+		};
+		"88CD00108856EB54646FBA1B" = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = "2147483647";
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = "0";
+		};
+		"90EBA728E921BE16435A1E76" = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.siriready.messages.broken.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				GENERATE_INFOPLIST_FILE = YES;
+				TEST_TARGET_NAME = MessagesBroken;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				MARKETING_VERSION = "1.0";
+				CURRENT_PROJECT_VERSION = "1";
+			};
+			name = Debug;
+		};
+		A79058D7E43720567F6AC384 = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ../../Harness;
+			sourceTree = "<group>";
+		};
+		A8C8E06AAD489AB443A69FC6 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.siriready.messages.broken;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MessagesBroken;
+				MARKETING_VERSION = "1.0";
+				CURRENT_PROJECT_VERSION = "1";
+				ENABLE_PREVIEWS = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Release;
+		};
+		BAC3F17574150218F91693C9 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = "0";
+			path = MessagesBroken.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BE3C6D84A0C7E02547FE10A5 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.cfbundle;
+			includeInIndex = "0";
+			path = MessagesBrokenUITests.xctest;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BF24CAA4073EEE2434D8CB35 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"66ADF36DDC56A63A694AA9DB",
+				"60B1F58D5396FB8CE09A48A8",
+			);
+			defaultConfigurationIsVisible = "0";
+			defaultConfigurationName = Release;
+		};
+		D8A82BE468C048EC405ED929 = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = App;
+			sourceTree = "<group>";
+		};
+		DEB0AEE9E091DF037EAFFFD0 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"2C31A6640B0652490087541B",
+				A8C8E06AAD489AB443A69FC6,
+			);
+			defaultConfigurationIsVisible = "0";
+			defaultConfigurationName = Release;
+		};
+		E4D4EB57818E1D3D01054581 = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ../Shared;
+			sourceTree = "<group>";
+		};
+		E7ABE275EEE820F2C832A9D8 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = "2147483647";
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = "0";
+		};
+		ECD80788B905D3852F0DC353 = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBFCFDAC1DB4DC9CC0AF956B;
+			proxyType = "1";
+			remoteGlobalIDString = F7E741F8FB22188AC49CCC6A;
+			remoteInfo = MessagesBroken;
+		};
+		F5D63AC641F7E417164563D1 = {
+			isa = PBXTargetDependency;
+			target = F7E741F8FB22188AC49CCC6A;
+			targetProxy = ECD80788B905D3852F0DC353;
+		};
+		F6DCA4F911F73D5448295D60 = {
+			isa = PBXGroup;
+			children = (
+				BAC3F17574150218F91693C9,
+				BE3C6D84A0C7E02547FE10A5,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7E741F8FB22188AC49CCC6A = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEB0AEE9E091DF037EAFFFD0;
+			buildPhases = (
+				"4D0EFC0BA2380552DBDFF9AC",
+				"70E701A7CBE19616E50D2FF1",
+				"26D47EACB733A20609261200",
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D8A82BE468C048EC405ED929,
+				E4D4EB57818E1D3D01054581,
+				"16AC145DB24D17645E4C5B84",
+			);
+			name = MessagesBroken;
+			productName = MessagesBroken;
+			productReference = BAC3F17574150218F91693C9;
+			productType = "com.apple.product-type.application";
+		};
+		FBFCFDAC1DB4DC9CC0AF956B = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = "1";
+				LastSwiftUpdateCheck = "2710";
+				LastUpgradeCheck = "2710";
+				TargetAttributes = {
+					F7E741F8FB22188AC49CCC6A = {
+						CreatedOnToolsVersion = "27.1";
+					};
+					"453880F38B8236986C3F813B" = {
+						CreatedOnToolsVersion = "27.1";
+						TestTargetID = F7E741F8FB22188AC49CCC6A;
+					};
+				};
+			};
+			buildConfigurationList = BF24CAA4073EEE2434D8CB35;
+			developmentRegion = en;
+			hasScannedForEncodings = "0";
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = "4A707AB20C5B3FC3001236BC";
+			minimizedProjectReferenceProxies = "1";
+			preferredProjectObjectVersion = "77";
+			productRefGroup = F6DCA4F911F73D5448295D60;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7E741F8FB22188AC49CCC6A,
+				"453880F38B8236986C3F813B",
+			);
+		};
+	};
+	rootObject = FBFCFDAC1DB4DC9CC0AF956B;
+}

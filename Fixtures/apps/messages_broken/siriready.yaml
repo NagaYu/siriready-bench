@@ -1,0 +1,43 @@
+# INTENTIONALLY BROKEN fixture (SiriReady Bench test scenario):
+#  (a) no draftMessage companion for sendMessage   -> C1 / F1
+#  (b) ContactEntity is not an IndexedEntity        -> C2 / F4
+#  (c) MessageDetailView has no View Annotation     -> C3 / F6
+# SiriReady Bench fixture declaration (synthetic app "Relay").
+# Declares intent that the source alone cannot express.
+app_id: messages
+domain: messages
+display_name: "Relay (synthetic messages app)"
+
+# Entities the developer intends to contribute to the Spotlight semantic index.
+indexed_entities:
+  - ContactEntity
+  - ConversationEntity
+  - MessageEntity
+
+# Views the developer intends to carry View Annotations.
+annotated_views:
+  - ContactListView
+  - ContactDetailView
+  - ConversationListView
+  - MessageDetailView
+
+# Intended routing per intent.
+privacy:
+  SendMessageIntent: on_device_only
+  SetMessageReadStatusIntent: on_device_only
+  OpenConversationIntent: on_device_only
+
+# Main screens and the entity types they display.
+screens:
+  contact_list:
+    view: ContactListView
+    entities: [ContactEntity]
+  contact_detail:
+    view: ContactDetailView
+    entities: [ContactEntity]
+  conversation_list:
+    view: ConversationListView
+    entities: [ConversationEntity]
+  message_detail:
+    view: MessageDetailView
+    entities: [MessageEntity]

@@ -1,0 +1,44 @@
+# Offline gate: static audit, MOCK scoring, dataset validation and benchmark regeneration.
+# No simulator, no network access from the code under test (pip installs pytest/pyarrow only).
+name: offline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: offline-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  offline:
+    runs-on: macos-26
+    timeout-minutes: 30
+    env:
+      # Pin the toolchain; the job fails loudly if the runner image does not ship it.
+      XCODE_APP: /Applications/Xcode_27.1.app
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: |
+          test -d "$XCODE_APP" || { echo "::error::$XCODE_APP not found on this runner image"; ls /Applications | grep -i xcode; exit 1; }
+          echo "DEVELOPER_DIR=$XCODE_APP/Contents/Developer" >> "$GITHUB_ENV"
+          "$XCODE_APP/Contents/Developer/usr/bin/xcodebuild" -version
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install test-only Python packages
+        run: python -m pip install --disable-pip-version-check pytest==9.* pyarrow==21.*
+
+      - name: Offline checks (same as scripts/ci_local.sh)
+        env:
+          PYTEST_PYTHON: python
+        run: scripts/ci_local.sh

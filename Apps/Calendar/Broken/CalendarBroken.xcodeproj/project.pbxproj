@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = "1";
+	classes = {
+	};
+	objectVersion = "77";
+	objects = {
+		"00B95779A39B418347394AF2" = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = "2147483647";
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = "0";
+		};
+		"034F1977EB292E9AB40C1E9E" = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = "2147483647";
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = "0";
+		};
+		"0A0AC4EAD2F63A340A809486" = {
+			isa = PBXGroup;
+			children = (
+				"3AF24FFCFF7FA878A310CAB9",
+				"8187DDCDA6856019096DDA4F",
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		"1EC021BE17EBCEF8B29C5FD8" = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.siriready.calendar.broken.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				GENERATE_INFOPLIST_FILE = YES;
+				TEST_TARGET_NAME = CalendarBroken;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				MARKETING_VERSION = "1.0";
+				CURRENT_PROJECT_VERSION = "1";
+			};
+			name = Release;
+		};
+		"2EFC355974FED25C83F97B32" = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.siriready.calendar.broken;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CalendarBroken;
+				MARKETING_VERSION = "1.0";
+				CURRENT_PROJECT_VERSION = "1";
+				ENABLE_PREVIEWS = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Release;
+		};
+		"345BF12B05806EA4A66F2401" = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = "27.0";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = "5.0";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				ENABLE_TESTABILITY = YES;
+			};
+			name = Debug;
+		};
+		"3AF24FFCFF7FA878A310CAB9" = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = "0";
+			path = CalendarBroken.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		"42BC223D7CB4B4F35BDD4345" = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ../Shared;
+			sourceTree = "<group>";
+		};
+		"556816171FB1473FDAB76CCA" = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC8CAA53E032C80256217A3;
+			buildPhases = (
+				"00B95779A39B418347394AF2",
+				"6E6EA81F08CE6DE4571726CD",
+				"034F1977EB292E9AB40C1E9E",
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC9CA3125C85ECD4EB216A1E,
+			);
+			fileSystemSynchronizedGroups = (
+				"8EDD452FC1DDE86F0DA10ECD",
+			);
+			name = CalendarBrokenUITests;
+			productName = CalendarBrokenUITests;
+			productReference = "8187DDCDA6856019096DDA4F";
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		"586DF02B16F4A48486011BBD" = {
+			isa = PBXGroup;
+			children = (
+				DE06B03B4EEC7A2266D4B2F8,
+				"8EDD452FC1DDE86F0DA10ECD",
+				"42BC223D7CB4B4F35BDD4345",
+				A1A2A7A3AA3EDE83E8494D0B,
+				"0A0AC4EAD2F63A340A809486",
+			);
+			sourceTree = "<group>";
+		};
+		"62642F5A6133612198AA19CC" = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.siriready.calendar.broken;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CalendarBroken;
+				MARKETING_VERSION = "1.0";
+				CURRENT_PROJECT_VERSION = "1";
+				ENABLE_PREVIEWS = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Debug;
+		};
+		"6E6EA81F08CE6DE4571726CD" = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = "2147483647";
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = "0";
+		};
+		"8187DDCDA6856019096DDA4F" = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.cfbundle;
+			includeInIndex = "0";
+			path = CalendarBrokenUITests.xctest;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		"8EDD452FC1DDE86F0DA10ECD" = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ../../Harness;
+			sourceTree = "<group>";
+		};
+		A1A2A7A3AA3EDE83E8494D0B = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ../../Common;
+			sourceTree = "<group>";
+		};
+		A36AD85E228B64EE495EDBA6 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"345BF12B05806EA4A66F2401",
+				BC9D913C8AD7E0CA6CF4483E,
+			);
+			defaultConfigurationIsVisible = "0";
+			defaultConfigurationName = Release;
+		};
+		BC9D913C8AD7E0CA6CF4483E = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = "27.0";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = "5.0";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				ONLY_ACTIVE_ARCH = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				ENABLE_TESTABILITY = NO;
+			};
+			name = Release;
+		};
+		C4EA62F2CA42A78B79203ED8 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9DECCCD1CCD53917045DB5C;
+			buildPhases = (
+				EAE68EC677F39F7298392525,
+				E413E40A1D10F2EC42F3B590,
+				C9C17BECD1746B740EBA91E4,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				DE06B03B4EEC7A2266D4B2F8,
+				"42BC223D7CB4B4F35BDD4345",
+				A1A2A7A3AA3EDE83E8494D0B,
+			);
+			name = CalendarBroken;
+			productName = CalendarBroken;
+			productReference = "3AF24FFCFF7FA878A310CAB9";
+			productType = "com.apple.product-type.application";
+		};
+		C9C17BECD1746B740EBA91E4 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = "2147483647";
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = "0";
+		};
+		DE06B03B4EEC7A2266D4B2F8 = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = App;
+			sourceTree = "<group>";
+		};
+		E413E40A1D10F2EC42F3B590 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = "2147483647";
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = "0";
+		};
+		E7EE73267245A9D4699FDFB7 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.siriready.calendar.broken.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				GENERATE_INFOPLIST_FILE = YES;
+				TEST_TARGET_NAME = CalendarBroken;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				MARKETING_VERSION = "1.0";
+				CURRENT_PROJECT_VERSION = "1";
+			};
+			name = Debug;
+		};
+		E9846CD472B35FF4B2A0E31B = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = "1";
+				LastSwiftUpdateCheck = "2710";
+				LastUpgradeCheck = "2710";
+				TargetAttributes = {
+					C4EA62F2CA42A78B79203ED8 = {
+						CreatedOnToolsVersion = "27.1";
+					};
+					"556816171FB1473FDAB76CCA" = {
+						CreatedOnToolsVersion = "27.1";
+						TestTargetID = C4EA62F2CA42A78B79203ED8;
+					};
+				};
+			};
+			buildConfigurationList = A36AD85E228B64EE495EDBA6;
+			developmentRegion = en;
+			hasScannedForEncodings = "0";
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = "586DF02B16F4A48486011BBD";
+			minimizedProjectReferenceProxies = "1";
+			preferredProjectObjectVersion = "77";
+			productRefGroup = "0A0AC4EAD2F63A340A809486";
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4EA62F2CA42A78B79203ED8,
+				"556816171FB1473FDAB76CCA",
+			);
+		};
+		E9DECCCD1CCD53917045DB5C = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"62642F5A6133612198AA19CC",
+				"2EFC355974FED25C83F97B32",
+			);
+			defaultConfigurationIsVisible = "0";
+			defaultConfigurationName = Release;
+		};
+		EAE68EC677F39F7298392525 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = "2147483647";
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = "0";
+		};
+		EDC8CAA53E032C80256217A3 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7EE73267245A9D4699FDFB7,
+				"1EC021BE17EBCEF8B29C5FD8",
+			);
+			defaultConfigurationIsVisible = "0";
+			defaultConfigurationName = Release;
+		};
+		F810D58418BEDB064485A56C = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9846CD472B35FF4B2A0E31B;
+			proxyType = "1";
+			remoteGlobalIDString = C4EA62F2CA42A78B79203ED8;
+			remoteInfo = CalendarBroken;
+		};
+		FC9CA3125C85ECD4EB216A1E = {
+			isa = PBXTargetDependency;
+			target = C4EA62F2CA42A78B79203ED8;
+			targetProxy = F810D58418BEDB064485A56C;
+		};
+	};
+	rootObject = E9846CD472B35FF4B2A0E31B;
+}

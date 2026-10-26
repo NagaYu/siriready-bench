@@ -1,0 +1,251 @@
+{
+ "protocol_version": "spotcheck-v1",
+ "sample": true,
+ "device": "SAMPLE (no device was used)",
+ "os": "SAMPLE (iOS 27.x)",
+ "locale": "SAMPLE (en-US / ja-JP)",
+ "siri_settings": "SAMPLE — fictional values for illustration only",
+ "recorded_on": null,
+ "results": [
+  {
+   "case_id": "messages-en-022",
+   "input_mode": "typed",
+   "reached_intent": "DraftMessageIntent",
+   "resolved_entity": "c_marcus",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "messages-en-135",
+   "input_mode": "voice",
+   "reached_intent": "SendMessageIntent",
+   "resolved_entity": null,
+   "success": false,
+   "notes": "SAMPLE: code-switched '下書き' was treated as send"
+  },
+  {
+   "case_id": "messages-en-155",
+   "input_mode": "voice",
+   "reached_intent": "DraftMessageIntent",
+   "resolved_entity": "c_mei",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "messages-en-162",
+   "input_mode": "typed",
+   "reached_intent": "OpenConversationIntent",
+   "resolved_entity": "conv_c_chris_neighbor",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "messages-en-272",
+   "input_mode": "voice",
+   "reached_intent": "SendMessageIntent",
+   "resolved_entity": "c_aiden_farrell",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "messages-en-081",
+   "input_mode": "voice",
+   "reached_intent": "OpenConversationIntent",
+   "resolved_entity": "conv_c_dani",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "messages-en-295",
+   "input_mode": "typed",
+   "reached_intent": "SendMessageIntent",
+   "resolved_entity": "c_rosa",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "messages-ja-011",
+   "input_mode": "voice",
+   "reached_intent": "SendMessageIntent",
+   "resolved_entity": "j_fujii",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "messages-ja-136",
+   "input_mode": "voice",
+   "reached_intent": "DraftMessageIntent",
+   "resolved_entity": "j_hirano",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "messages-ja-149",
+   "input_mode": "typed",
+   "reached_intent": "SendMessageIntent",
+   "resolved_entity": "j_watanabe",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "messages-ja-259",
+   "input_mode": "voice",
+   "reached_intent": "OpenConversationIntent",
+   "resolved_entity": "conv_j_kobayashi_yoga",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "messages-ja-071",
+   "input_mode": "voice",
+   "reached_intent": "OpenConversationIntent",
+   "resolved_entity": "disambiguation",
+   "success": true,
+   "notes": "SAMPLE: Siri asked which みづき"
+  },
+  {
+   "case_id": "messages-ja-280",
+   "input_mode": "typed",
+   "reached_intent": "OpenConversationIntent",
+   "resolved_entity": "conv_j_kanno",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "messages-ja-093",
+   "input_mode": "voice",
+   "reached_intent": "SendMessageIntent",
+   "resolved_entity": "j_saito",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "calendar-en-026",
+   "input_mode": "voice",
+   "reached_intent": "ShareEventIntent",
+   "resolved_entity": "ev_onboarding",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "calendar-en-041",
+   "input_mode": "typed",
+   "reached_intent": "UpdateEventIntent",
+   "resolved_entity": "ev_onboarding",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "calendar-en-155",
+   "input_mode": "voice",
+   "reached_intent": "UpdateEventIntent",
+   "resolved_entity": "ev_compliance",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "calendar-en-060",
+   "input_mode": "voice",
+   "reached_intent": "DeleteEventIntent",
+   "resolved_entity": "ev_sync_mon",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "calendar-en-269",
+   "input_mode": "typed",
+   "reached_intent": "DeleteEventIntent",
+   "resolved_entity": "ev_neal_lunch",
+   "success": false,
+   "notes": "SAMPLE: deleted without asking"
+  },
+  {
+   "case_id": "calendar-en-085",
+   "input_mode": "voice",
+   "reached_intent": "UpdateEventIntent",
+   "resolved_entity": "ev_onboarding",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "calendar-en-100",
+   "input_mode": "voice",
+   "reached_intent": "DeleteEventIntent",
+   "resolved_entity": "ev_brake",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "calendar-ja-027",
+   "input_mode": "typed",
+   "reached_intent": "ShareEventIntent",
+   "resolved_entity": "jev_tanaoroshi",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "calendar-ja-048",
+   "input_mode": "voice",
+   "reached_intent": "OpenEventIntent",
+   "resolved_entity": "jev_design",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "calendar-ja-252",
+   "input_mode": "voice",
+   "reached_intent": "DeleteEventIntent",
+   "resolved_entity": "jev_access",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "calendar-ja-260",
+   "input_mode": "typed",
+   "reached_intent": "ShareEventIntent",
+   "resolved_entity": "jev_weekly_mon",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "calendar-ja-273",
+   "input_mode": "voice",
+   "reached_intent": "DeleteEventIntent",
+   "resolved_entity": "jev_kansou_fri",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "calendar-ja-084",
+   "input_mode": "voice",
+   "reached_intent": "DeleteEventIntent",
+   "resolved_entity": "jev_kenshu",
+   "success": true,
+   "notes": "SAMPLE: confirmation dialog shown first"
+  },
+  {
+   "case_id": "calendar-ja-296",
+   "input_mode": "typed",
+   "reached_intent": "DeleteEventIntent",
+   "resolved_entity": "jev_choukai",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "calendar-ja-064",
+   "input_mode": "voice",
+   "reached_intent": "UpdateEventIntent",
+   "resolved_entity": "disambiguation",
+   "success": true,
+   "notes": "SAMPLE: matched expected"
+  },
+  {
+   "case_id": "calendar-ja-170",
+   "input_mode": "voice",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": "SAMPLE: Siri answered with a web result"
+  }
+ ]
+}

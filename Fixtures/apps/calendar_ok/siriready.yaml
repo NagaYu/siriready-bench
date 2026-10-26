@@ -1,0 +1,28 @@
+# SiriReady Bench fixture declaration (synthetic app "Orbit Calendar").
+app_id: calendar
+domain: calendar
+display_name: "Orbit Calendar (synthetic calendar app)"
+
+indexed_entities:
+  - EventEntity
+  - CalendarEntity
+
+annotated_views:
+  - DayView
+  - EventDetailView
+
+privacy:
+  CreateEventIntent: on_device_only
+  UpdateEventIntent: on_device_only
+  DeleteEventIntent: on_device_only
+  OpenEventIntent: on_device_only
+  # Sharing sends an invitation through the app's server by design.
+  ShareEventIntent: cloud_allowed
+
+screens:
+  day_view:
+    view: DayView
+    entities: [EventEntity]
+  event_detail:
+    view: EventDetailView
+    entities: [EventEntity]

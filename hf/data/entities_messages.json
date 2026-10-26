@@ -1,0 +1,2985 @@
+{
+ "app_id": "messages",
+ "domain": "messages",
+ "synthetic": true,
+ "dataset_version": "v1.2",
+ "license": "Original synthetic data created for SiriReady Bench (see BENCH_CARD.md).",
+ "intents": [
+  "SendMessageIntent",
+  "DraftMessageIntent",
+  "SetMessageReadStatusIntent",
+  "OpenConversationIntent"
+ ],
+ "entities": [
+  {
+   "id": "c_alex",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Alex Rivera"
+    },
+    {
+     "text": "Alex"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_anjali",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Anjali Raghunathan"
+    },
+    {
+     "text": "Anjali"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_shawn",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Shawn Patel"
+    },
+    {
+     "text": "Shawn"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_kate",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Katherine Osei"
+    },
+    {
+     "text": "Kate"
+    },
+    {
+     "text": "Katie"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_marcus",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Marcus Lindqvist"
+    },
+    {
+     "text": "Marcus"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_dani",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Daniela Fischer"
+    },
+    {
+     "text": "Dani"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_omar",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Omar Haddad"
+    },
+    {
+     "text": "Omar"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_rae",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Rae Thompson"
+    },
+    {
+     "text": "Rae"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_samlee_work",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Sam Lee"
+    }
+   ],
+   "qualifiers": [
+    "work",
+    "office"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_samlee_gym",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Sam Lee"
+    }
+   ],
+   "qualifiers": [
+    "gym"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_jon_park",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Jon Park"
+    }
+   ],
+   "qualifiers": [
+    "design"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_john_parke",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "John Parke"
+    }
+   ],
+   "qualifiers": [
+    "finance"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_takase",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "高瀬 美月",
+     "reading": "たかせ みづき"
+    },
+    {
+     "text": "美月",
+     "reading": "みづき"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_mori",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "森 瑞希",
+     "reading": "もり みづき"
+    },
+    {
+     "text": "瑞希",
+     "reading": "みづき"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_sato",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "佐藤 光",
+     "reading": "さとう ひかる"
+    },
+    {
+     "text": "光",
+     "reading": "ひかる"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_saito",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "齊藤 健",
+     "reading": "さいとう けん"
+    },
+    {
+     "text": "斉藤 健",
+     "reading": "さいとう けん"
+    },
+    {
+     "text": "斎藤 健",
+     "reading": "さいとう けん"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_onodera",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "小野寺 葵",
+     "reading": "おのでら あおい"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_ishikawa",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "石川 大翔",
+     "reading": "いしかわ ひろと"
+    },
+    {
+     "text": "ヒロト",
+     "reading": "ひろと"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_fujii",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "藤井 蓮",
+     "reading": "ふじい れん"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_nakamura_work",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "中村 結衣",
+     "reading": "なかむら ゆい"
+    }
+   ],
+   "qualifiers": [
+    "仕事",
+    "会社"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_nakamura_uni",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "中村 結衣",
+     "reading": "なかむら ゆい"
+    }
+   ],
+   "qualifiers": [
+    "大学",
+    "サークル"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_kato_tennis",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "加藤 涼",
+     "reading": "かとう りょう"
+    }
+   ],
+   "qualifiers": [
+    "テニス"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_kato_acct",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "加藤 遼",
+     "reading": "かとう りょう"
+    }
+   ],
+   "qualifiers": [
+    "経理"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_alex",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Alex Rivera"
+    },
+    {
+     "text": "Alex"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_alex"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_anjali",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Anjali Raghunathan"
+    },
+    {
+     "text": "Anjali"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_anjali"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_shawn",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Shawn Patel"
+    },
+    {
+     "text": "Shawn"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_shawn"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_kate",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Katherine Osei"
+    },
+    {
+     "text": "Kate"
+    },
+    {
+     "text": "Katie"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_kate"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_marcus",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Marcus Lindqvist"
+    },
+    {
+     "text": "Marcus"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_marcus"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_dani",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Daniela Fischer"
+    },
+    {
+     "text": "Dani"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_dani"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_omar",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Omar Haddad"
+    },
+    {
+     "text": "Omar"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_omar"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_rae",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Rae Thompson"
+    },
+    {
+     "text": "Rae"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_rae"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_samlee_work",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Sam Lee"
+    }
+   ],
+   "qualifiers": [
+    "work",
+    "office"
+   ],
+   "related": {
+    "participant": "c_samlee_work"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_samlee_gym",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Sam Lee"
+    }
+   ],
+   "qualifiers": [
+    "gym"
+   ],
+   "related": {
+    "participant": "c_samlee_gym"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_jon_park",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Jon Park"
+    }
+   ],
+   "qualifiers": [
+    "design"
+   ],
+   "related": {
+    "participant": "c_jon_park"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_john_parke",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "John Parke"
+    }
+   ],
+   "qualifiers": [
+    "finance"
+   ],
+   "related": {
+    "participant": "c_john_parke"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_takase",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "高瀬 美月",
+     "reading": "たかせ みづき"
+    },
+    {
+     "text": "美月",
+     "reading": "みづき"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_takase"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_mori",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "森 瑞希",
+     "reading": "もり みづき"
+    },
+    {
+     "text": "瑞希",
+     "reading": "みづき"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_mori"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_sato",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "佐藤 光",
+     "reading": "さとう ひかる"
+    },
+    {
+     "text": "光",
+     "reading": "ひかる"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_sato"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_saito",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "齊藤 健",
+     "reading": "さいとう けん"
+    },
+    {
+     "text": "斉藤 健",
+     "reading": "さいとう けん"
+    },
+    {
+     "text": "斎藤 健",
+     "reading": "さいとう けん"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_saito"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_onodera",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "小野寺 葵",
+     "reading": "おのでら あおい"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_onodera"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_ishikawa",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "石川 大翔",
+     "reading": "いしかわ ひろと"
+    },
+    {
+     "text": "ヒロト",
+     "reading": "ひろと"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_ishikawa"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_fujii",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "藤井 蓮",
+     "reading": "ふじい れん"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_fujii"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_nakamura_work",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "中村 結衣",
+     "reading": "なかむら ゆい"
+    }
+   ],
+   "qualifiers": [
+    "仕事",
+    "会社"
+   ],
+   "related": {
+    "participant": "j_nakamura_work"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_nakamura_uni",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "中村 結衣",
+     "reading": "なかむら ゆい"
+    }
+   ],
+   "qualifiers": [
+    "大学",
+    "サークル"
+   ],
+   "related": {
+    "participant": "j_nakamura_uni"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_kato_tennis",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "加藤 涼",
+     "reading": "かとう りょう"
+    }
+   ],
+   "qualifiers": [
+    "テニス"
+   ],
+   "related": {
+    "participant": "j_kato_tennis"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_kato_acct",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "加藤 遼",
+     "reading": "かとう りょう"
+    }
+   ],
+   "qualifiers": [
+    "経理"
+   ],
+   "related": {
+    "participant": "j_kato_acct"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_en_01",
+   "type": "MessageEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Running late, sorry"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "c_alex"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_en_02",
+   "type": "MessageEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Slides attached for Friday"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "c_anjali"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_en_03",
+   "type": "MessageEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Are we still on for lunch"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "c_omar"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_en_04",
+   "type": "MessageEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Parking is on level two"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "c_kate"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_en_05",
+   "type": "MessageEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Package arrived at reception"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "c_marcus"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_en_06",
+   "type": "MessageEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Thanks for the notes"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "c_dani"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_ja_01",
+   "type": "MessageEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "少し遅れます"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "j_sato"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_ja_02",
+   "type": "MessageEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "金曜の資料を送ります"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "j_saito"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_ja_03",
+   "type": "MessageEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "ランチまだ行ける？"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "j_onodera"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_ja_04",
+   "type": "MessageEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "駐車場は2階です"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "j_ishikawa"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_ja_05",
+   "type": "MessageEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "荷物が受付に届いてます"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "j_fujii"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_ja_06",
+   "type": "MessageEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "メモありがとう"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "j_takase"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "c_nadia",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Nadia Kowalski"
+    },
+    {
+     "text": "Nadia"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_tomasz",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Tomasz Brennan"
+    },
+    {
+     "text": "Tom"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_leila",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Leila Farouk"
+    },
+    {
+     "text": "Leila"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_hugo",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Hugo Lambert"
+    },
+    {
+     "text": "Hugo"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_grace",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Grace Okafor"
+    },
+    {
+     "text": "Gracie"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_ivan",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Ivan Sorensen"
+    },
+    {
+     "text": "Ivan"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_mei",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Mei Lindgren"
+    },
+    {
+     "text": "Mei"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_felix",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Felix Moreau"
+    },
+    {
+     "text": "Felix"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_chris_studio",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Chris Moreno"
+    }
+   ],
+   "qualifiers": [
+    "studio"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_chris_neighbor",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Chris Moreno"
+    }
+   ],
+   "qualifiers": [
+    "neighbor"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_marc_ellison",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Marc Ellison"
+    }
+   ],
+   "qualifiers": [
+    "band"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_mark_ellison",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Mark Ellison"
+    }
+   ],
+   "qualifiers": [
+    "school"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_rosa",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Rosa Delgado"
+    },
+    {
+     "text": "Rosa"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_kwame",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Kwame Mensah"
+    },
+    {
+     "text": "Kwame"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_elena",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Elena Novak"
+    },
+    {
+     "text": "Ellie"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_dmitri",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Dmitri Volkov"
+    },
+    {
+     "text": "Mitya"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_sofia",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Sofia Brandt"
+    },
+    {
+     "text": "Sofie"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_arjun",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Arjun Mehta"
+    },
+    {
+     "text": "Arjun"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_yusuf",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Yusuf Tekinalp"
+    },
+    {
+     "text": "Yusuf"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_clara",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Clara Holm"
+    },
+    {
+     "text": "Clara"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_jordan_climb",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Jordan Blake"
+    }
+   ],
+   "qualifiers": [
+    "climbing"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_jordan_acct",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Jordan Blake"
+    }
+   ],
+   "qualifiers": [
+    "accounting"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_aidan_farrell",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Aidan Farrell"
+    }
+   ],
+   "qualifiers": [
+    "soccer"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "c_aiden_farrell",
+   "type": "ContactEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Aiden Farrell"
+    }
+   ],
+   "qualifiers": [
+    "legal"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_sakamoto",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "坂本 陸",
+     "reading": "さかもと りく"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_hirano",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "平野 紗季",
+     "reading": "ひらの さき"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_yoshikawa",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "吉川 湊",
+     "reading": "よしかわ みなと"
+    },
+    {
+     "text": "ミナト",
+     "reading": "みなと"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_matsuda",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "松田 杏",
+     "reading": "まつだ あん"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_okamoto",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "岡本 樹",
+     "reading": "おかもと いつき"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_watanabe",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "渡邉 翔",
+     "reading": "わたなべ しょう"
+    },
+    {
+     "text": "渡辺 翔",
+     "reading": "わたなべ しょう"
+    },
+    {
+     "text": "渡邊 翔",
+     "reading": "わたなべ しょう"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_miyamoto",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "宮本 遥",
+     "reading": "みやもと はるか"
+    },
+    {
+     "text": "遥",
+     "reading": "はるか"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_ishii",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "石井 遙",
+     "reading": "いしい はるか"
+    },
+    {
+     "text": "遙",
+     "reading": "はるか"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_yamada_gym",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "山田 翼",
+     "reading": "やまだ つばさ"
+    }
+   ],
+   "qualifiers": [
+    "ジム"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_yamada_client",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "山田 翼",
+     "reading": "やまだ つばさ"
+    }
+   ],
+   "qualifiers": [
+    "取引先"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_sasaki_baito",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "佐々木 翔太",
+     "reading": "ささき しょうた"
+    }
+   ],
+   "qualifiers": [
+    "バイト"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_sasaki_lab",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "佐々木 将太",
+     "reading": "ささき しょうた"
+    }
+   ],
+   "qualifiers": [
+    "研究室"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_murakami",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "村上 悠真",
+     "reading": "むらかみ ゆうま"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_nishida",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "西田 楓",
+     "reading": "にしだ かえで"
+    },
+    {
+     "text": "カエデ",
+     "reading": "かえで"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_hara",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "原 颯太",
+     "reading": "はら そうた"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_kanno",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "菅野 澪",
+     "reading": "かんの みお"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_shibata",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "柴田 律",
+     "reading": "しばた りつ"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_takagi",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "髙木 慎吾",
+     "reading": "たかぎ しんご"
+    },
+    {
+     "text": "高木 慎吾",
+     "reading": "たかぎ しんご"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_kitamura",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "北村 彩",
+     "reading": "きたむら あや"
+    },
+    {
+     "text": "彩",
+     "reading": "あや"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_minami",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "南 綾",
+     "reading": "みなみ あや"
+    },
+    {
+     "text": "綾",
+     "reading": "あや"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_kobayashi_yoga",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "小林 葵",
+     "reading": "こばやし あおい"
+    }
+   ],
+   "qualifiers": [
+    "ヨガ"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_kobayashi_nursery",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "小林 葵",
+     "reading": "こばやし あおい"
+    }
+   ],
+   "qualifiers": [
+    "保育園"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_hasegawa_futsal",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "長谷川 亮",
+     "reading": "はせがわ りょう"
+    }
+   ],
+   "qualifiers": [
+    "フットサル"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "j_hasegawa_soumu",
+   "type": "ContactEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "長谷川 良",
+     "reading": "はせがわ りょう"
+    }
+   ],
+   "qualifiers": [
+    "総務"
+   ],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_nadia",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Nadia Kowalski"
+    },
+    {
+     "text": "Nadia"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_nadia"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_tomasz",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Tomasz Brennan"
+    },
+    {
+     "text": "Tom"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_tomasz"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_leila",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Leila Farouk"
+    },
+    {
+     "text": "Leila"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_leila"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_hugo",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Hugo Lambert"
+    },
+    {
+     "text": "Hugo"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_hugo"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_grace",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Grace Okafor"
+    },
+    {
+     "text": "Gracie"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_grace"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_ivan",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Ivan Sorensen"
+    },
+    {
+     "text": "Ivan"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_ivan"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_mei",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Mei Lindgren"
+    },
+    {
+     "text": "Mei"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_mei"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_felix",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Felix Moreau"
+    },
+    {
+     "text": "Felix"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_felix"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_chris_studio",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Chris Moreno"
+    }
+   ],
+   "qualifiers": [
+    "studio"
+   ],
+   "related": {
+    "participant": "c_chris_studio"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_chris_neighbor",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Chris Moreno"
+    }
+   ],
+   "qualifiers": [
+    "neighbor"
+   ],
+   "related": {
+    "participant": "c_chris_neighbor"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_marc_ellison",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Marc Ellison"
+    }
+   ],
+   "qualifiers": [
+    "band"
+   ],
+   "related": {
+    "participant": "c_marc_ellison"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_mark_ellison",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Mark Ellison"
+    }
+   ],
+   "qualifiers": [
+    "school"
+   ],
+   "related": {
+    "participant": "c_mark_ellison"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_rosa",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Rosa Delgado"
+    },
+    {
+     "text": "Rosa"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_rosa"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_kwame",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Kwame Mensah"
+    },
+    {
+     "text": "Kwame"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_kwame"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_elena",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Elena Novak"
+    },
+    {
+     "text": "Ellie"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_elena"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_dmitri",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Dmitri Volkov"
+    },
+    {
+     "text": "Mitya"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_dmitri"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_sofia",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Sofia Brandt"
+    },
+    {
+     "text": "Sofie"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_sofia"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_arjun",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Arjun Mehta"
+    },
+    {
+     "text": "Arjun"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_arjun"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_yusuf",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Yusuf Tekinalp"
+    },
+    {
+     "text": "Yusuf"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_yusuf"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_clara",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Clara Holm"
+    },
+    {
+     "text": "Clara"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "c_clara"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_jordan_climb",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Jordan Blake"
+    }
+   ],
+   "qualifiers": [
+    "climbing"
+   ],
+   "related": {
+    "participant": "c_jordan_climb"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_jordan_acct",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Jordan Blake"
+    }
+   ],
+   "qualifiers": [
+    "accounting"
+   ],
+   "related": {
+    "participant": "c_jordan_acct"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_aidan_farrell",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Aidan Farrell"
+    }
+   ],
+   "qualifiers": [
+    "soccer"
+   ],
+   "related": {
+    "participant": "c_aidan_farrell"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_c_aiden_farrell",
+   "type": "ConversationEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Aiden Farrell"
+    }
+   ],
+   "qualifiers": [
+    "legal"
+   ],
+   "related": {
+    "participant": "c_aiden_farrell"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_sakamoto",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "坂本 陸",
+     "reading": "さかもと りく"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_sakamoto"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_hirano",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "平野 紗季",
+     "reading": "ひらの さき"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_hirano"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_yoshikawa",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "吉川 湊",
+     "reading": "よしかわ みなと"
+    },
+    {
+     "text": "ミナト",
+     "reading": "みなと"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_yoshikawa"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_matsuda",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "松田 杏",
+     "reading": "まつだ あん"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_matsuda"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_okamoto",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "岡本 樹",
+     "reading": "おかもと いつき"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_okamoto"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_watanabe",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "渡邉 翔",
+     "reading": "わたなべ しょう"
+    },
+    {
+     "text": "渡辺 翔",
+     "reading": "わたなべ しょう"
+    },
+    {
+     "text": "渡邊 翔",
+     "reading": "わたなべ しょう"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_watanabe"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_miyamoto",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "宮本 遥",
+     "reading": "みやもと はるか"
+    },
+    {
+     "text": "遥",
+     "reading": "はるか"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_miyamoto"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_ishii",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "石井 遙",
+     "reading": "いしい はるか"
+    },
+    {
+     "text": "遙",
+     "reading": "はるか"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_ishii"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_yamada_gym",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "山田 翼",
+     "reading": "やまだ つばさ"
+    }
+   ],
+   "qualifiers": [
+    "ジム"
+   ],
+   "related": {
+    "participant": "j_yamada_gym"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_yamada_client",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "山田 翼",
+     "reading": "やまだ つばさ"
+    }
+   ],
+   "qualifiers": [
+    "取引先"
+   ],
+   "related": {
+    "participant": "j_yamada_client"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_sasaki_baito",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "佐々木 翔太",
+     "reading": "ささき しょうた"
+    }
+   ],
+   "qualifiers": [
+    "バイト"
+   ],
+   "related": {
+    "participant": "j_sasaki_baito"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_sasaki_lab",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "佐々木 将太",
+     "reading": "ささき しょうた"
+    }
+   ],
+   "qualifiers": [
+    "研究室"
+   ],
+   "related": {
+    "participant": "j_sasaki_lab"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_murakami",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "村上 悠真",
+     "reading": "むらかみ ゆうま"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_murakami"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_nishida",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "西田 楓",
+     "reading": "にしだ かえで"
+    },
+    {
+     "text": "カエデ",
+     "reading": "かえで"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_nishida"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_hara",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "原 颯太",
+     "reading": "はら そうた"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_hara"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_kanno",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "菅野 澪",
+     "reading": "かんの みお"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_kanno"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_shibata",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "柴田 律",
+     "reading": "しばた りつ"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_shibata"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_takagi",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "髙木 慎吾",
+     "reading": "たかぎ しんご"
+    },
+    {
+     "text": "高木 慎吾",
+     "reading": "たかぎ しんご"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_takagi"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_kitamura",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "北村 彩",
+     "reading": "きたむら あや"
+    },
+    {
+     "text": "彩",
+     "reading": "あや"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_kitamura"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_minami",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "南 綾",
+     "reading": "みなみ あや"
+    },
+    {
+     "text": "綾",
+     "reading": "あや"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "participant": "j_minami"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_kobayashi_yoga",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "小林 葵",
+     "reading": "こばやし あおい"
+    }
+   ],
+   "qualifiers": [
+    "ヨガ"
+   ],
+   "related": {
+    "participant": "j_kobayashi_yoga"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_kobayashi_nursery",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "小林 葵",
+     "reading": "こばやし あおい"
+    }
+   ],
+   "qualifiers": [
+    "保育園"
+   ],
+   "related": {
+    "participant": "j_kobayashi_nursery"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_hasegawa_futsal",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "長谷川 亮",
+     "reading": "はせがわ りょう"
+    }
+   ],
+   "qualifiers": [
+    "フットサル"
+   ],
+   "related": {
+    "participant": "j_hasegawa_futsal"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "conv_j_hasegawa_soumu",
+   "type": "ConversationEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "長谷川 良",
+     "reading": "はせがわ りょう"
+    }
+   ],
+   "qualifiers": [
+    "総務"
+   ],
+   "related": {
+    "participant": "j_hasegawa_soumu"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_en_b1",
+   "type": "MessageEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Train is delayed again"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "c_nadia"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_en_b2",
+   "type": "MessageEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Invoice went out this morning"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "c_tomasz"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_en_b3",
+   "type": "MessageEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Can we push our call"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "c_leila"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_en_b4",
+   "type": "MessageEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Keys are under the mat"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "c_hugo"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_en_b5",
+   "type": "MessageEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Photos from the trip"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "c_grace"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_en_b6",
+   "type": "MessageEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Table booked for eight"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "c_ivan"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_en_c1",
+   "type": "MessageEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Dinner moved to seven"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "c_rosa"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_en_c2",
+   "type": "MessageEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Slides look great"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "c_kwame"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_en_c3",
+   "type": "MessageEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Parcel is at the door"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "c_elena"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_en_c4",
+   "type": "MessageEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Running a bit behind"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "c_dmitri"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_en_c5",
+   "type": "MessageEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Gym at six tomorrow"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "c_sofia"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_en_c6",
+   "type": "MessageEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Code review is done"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "c_arjun"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_ja_b1",
+   "type": "MessageEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "電車がまた遅れてる"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "j_sakamoto"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_ja_b2",
+   "type": "MessageEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "請求書を出しました"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "j_hirano"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_ja_b3",
+   "type": "MessageEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "通話を後ろにずらせる？"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "j_yoshikawa"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_ja_b4",
+   "type": "MessageEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "鍵はマットの下です"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "j_matsuda"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_ja_b5",
+   "type": "MessageEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "旅行の写真です"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "j_okamoto"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_ja_b6",
+   "type": "MessageEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "8名で予約しました"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "j_watanabe"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_ja_c1",
+   "type": "MessageEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "夕飯は7時からに"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "j_murakami"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_ja_c2",
+   "type": "MessageEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "スライドいい感じ"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "j_nishida"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_ja_c3",
+   "type": "MessageEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "荷物が玄関に届いた"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "j_hara"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_ja_c4",
+   "type": "MessageEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "少し遅れそう"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "j_kanno"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_ja_c5",
+   "type": "MessageEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "明日6時にジム"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "j_shibata"
+   },
+   "attrs": {}
+  },
+  {
+   "id": "msg_ja_c6",
+   "type": "MessageEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "レビュー終わりました"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "sender": "j_takagi"
+   },
+   "attrs": {}
+  }
+ ]
+}

@@ -1,0 +1,85 @@
+# Real AppIntentsTesting run on an iOS 27 simulator. Manual only: each app takes 8–10 minutes.
+# By default only one app runs; choose "all" to run the four reference apps.
+name: real-run
+
+on:
+  workflow_dispatch:
+    inputs:
+      app:
+        description: Reference app to measure
+        type: choice
+        default: calendar_broken
+        options: [messages_ok, messages_broken, calendar_ok, calendar_broken, all]
+      dataset:
+        description: Dataset version
+        type: choice
+        default: v1.2
+        options: [v1.2]
+
+permissions:
+  contents: read
+
+jobs:
+  select:
+    runs-on: ubuntu-latest
+    outputs:
+      apps: ${{ steps.apps.outputs.apps }}
+    steps:
+      - id: apps
+        run: |
+          if [ "${{ inputs.app }}" = "all" ]; then
+            echo 'apps=["messages_ok","messages_broken","calendar_ok","calendar_broken"]' >> "$GITHUB_OUTPUT"
+          else
+            echo 'apps=["${{ inputs.app }}"]' >> "$GITHUB_OUTPUT"
+          fi
+
+  real:
+    needs: select
+    runs-on: macos-26
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        app: ${{ fromJSON(needs.select.outputs.apps) }}
+    env:
+      XCODE_APP: /Applications/Xcode_27.1.app
+      # Pinned simulator runtime: the published Phase 2 numbers were measured on iOS 27.0 (24A434).
+      RUNTIME_ID: com.apple.CoreSimulator.SimRuntime.iOS-27-0
+      DEVICE_TYPE: com.apple.CoreSimulator.SimDeviceType.iPhone-17
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode and pin the simulator runtime
+        run: |
+          test -d "$XCODE_APP" || { echo "::error::$XCODE_APP not found"; exit 1; }
+          echo "DEVELOPER_DIR=$XCODE_APP/Contents/Developer" >> "$GITHUB_ENV"
+          export DEVELOPER_DIR="$XCODE_APP/Contents/Developer"
+          xcrun simctl list runtimes | grep -q "iOS-27-0" || { echo "::error::iOS 27.0 runtime not installed"; xcrun simctl list runtimes; exit 1; }
+          UDID=$(xcrun simctl create "SiriReady iPhone 17" "$DEVICE_TYPE" "$RUNTIME_ID")
+          echo "SIRIREADY_SIM_ID=$UDID" >> "$GITHUB_ENV"
+          xcodebuild -version
+          xcrun simctl list runtimes | grep "iOS 27"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Real run (${{ matrix.app }}, dataset ${{ inputs.dataset }})
+        run: scripts/real_run.sh "${{ matrix.app }}" --dataset "${{ inputs.dataset }}" --out "out/real/${{ matrix.app }}"
+
+      - name: Record conditions
+        if: always()
+        run: |
+          { xcodebuild -version; xcrun simctl list runtimes | grep "iOS 27"; sw_vers; } > "out/real/${{ matrix.app }}/conditions.txt" || true
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: real-${{ matrix.app }}-${{ inputs.dataset }}
+          path: |
+            out/real/${{ matrix.app }}/plan.json
+            out/real/${{ matrix.app }}/raw.json
+            out/real/${{ matrix.app }}/mixed.md
+            out/real/${{ matrix.app }}/conditions.txt
+          if-no-files-found: warn

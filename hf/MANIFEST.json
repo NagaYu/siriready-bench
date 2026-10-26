@@ -1,0 +1,33 @@
+{
+ "adversarial": 336,
+ "app": "messages (synthetic \"Relay\")",
+ "catalog_entities": 178,
+ "dataset": "SiriReady Bench utterances",
+ "files": {
+  "dev.jsonl": {
+   "bytes": 356462,
+   "sha256": "114450bca46c8182c060043fa65ba1e5b70e2b495fe9313c1e6d4d76ae224d6b"
+  },
+  "dev.parquet": {
+   "bytes": 21229,
+   "sha256": "cfe4f4cdbd251fd68f2f6c1e262593bb05c80f914be537093653c1b4fd634e20"
+  },
+  "entities_messages.json": {
+   "bytes": 47230,
+   "sha256": "3420a4d1f18d9b56497242d1e7f5a646ea2d8200811ff5f1c808ae42fd089da6"
+  }
+ },
+ "locales": {
+  "en-US": 312,
+  "ja-JP": 312
+ },
+ "parquet_writer": "pyarrow 21.0.0",
+ "rows": 624,
+ "source": {
+  "cases": "dataset/v1.2/cases_dev.jsonl",
+  "sha256": "114450bca46c8182c060043fa65ba1e5b70e2b495fe9313c1e6d4d76ae224d6b"
+ },
+ "split": "dev",
+ "version": "v1.2",
+ "withheld": "eval split (calendar app, paraphrase families C/D) is not published"
+}

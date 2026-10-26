@@ -1,0 +1,10 @@
+.build/
+.swiftpm/
+__pycache__/
+.pytest_cache/
+*.pyc
+out/
+.DS_Store
+xcuserdata/
+*.xcresult
+dist/

@@ -1,0 +1,32 @@
+# INTENTIONALLY BROKEN reference app (same scenario as Fixtures/apps/calendar_broken):
+#  (a) same-title events are not disambiguated      -> F5
+#  (b) ShareEvent still lives in SiriKit (INIntent) -> C5 (and F1 for share)
+#  (c) CreateEventIntent is on_device_only but calls a remote geocoder -> C4 / F8
+# SiriReady Bench reference app declaration (buildable "Orbit Calendar", Phase 2).
+app_id: calendar
+domain: calendar
+display_name: "Orbit Calendar (synthetic calendar app)"
+
+indexed_entities:
+  - EventEntity
+  - CalendarEntity
+
+annotated_views:
+  - DayView
+  - EventDetailView
+
+privacy:
+  CreateEventIntent: on_device_only
+  UpdateEventIntent: on_device_only
+  DeleteEventIntent: on_device_only
+  OpenEventIntent: on_device_only
+  # Sharing sends an invitation through the app's server by design.
+  ShareEventIntent: cloud_allowed
+
+screens:
+  day_view:
+    view: DayView
+    entities: [EventEntity]
+  event_detail:
+    view: EventDetailView
+    entities: [EventEntity]

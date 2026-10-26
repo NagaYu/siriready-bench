@@ -1,0 +1,1769 @@
+{
+ "app_id": "calendar",
+ "domain": "calendar",
+ "synthetic": true,
+ "dataset_version": "v1.2",
+ "license": "Original synthetic data created for SiriReady Bench (see BENCH_CARD.md).",
+ "intents": [
+  "CreateEventIntent",
+  "UpdateEventIntent",
+  "DeleteEventIntent",
+  "OpenEventIntent",
+  "ShareEventIntent"
+ ],
+ "entities": [
+  {
+   "id": "ev_sync_mon",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Team Sync"
+    }
+   ],
+   "qualifiers": [
+    "monday",
+    "mon"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Monday",
+    "date": "2026-11-02",
+    "time": "10:00"
+   }
+  },
+  {
+   "id": "ev_sync_thu",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Team Sync"
+    }
+   ],
+   "qualifiers": [
+    "thursday",
+    "thu"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Thursday",
+    "date": "2026-11-05",
+    "time": "10:00"
+   }
+  },
+  {
+   "id": "ev_design_review",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Design Review"
+    },
+    {
+     "text": "Design Crit"
+    }
+   ],
+   "qualifiers": [
+    "tuesday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Tuesday",
+    "date": "2026-11-03",
+    "time": "14:00"
+   }
+  },
+  {
+   "id": "ev_peer_review",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Peer Review"
+    }
+   ],
+   "qualifiers": [
+    "wednesday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Wednesday",
+    "date": "2026-11-04",
+    "time": "11:00"
+   }
+  },
+  {
+   "id": "ev_brake",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Brake Inspection"
+    }
+   ],
+   "qualifiers": [
+    "saturday"
+   ],
+   "related": {
+    "calendar": "cal_personal"
+   },
+   "attrs": {
+    "weekday": "Saturday",
+    "date": "2026-11-07",
+    "time": "09:30"
+   }
+  },
+  {
+   "id": "ev_qbr",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Quarterly Business Review"
+    },
+    {
+     "text": "QBR"
+    }
+   ],
+   "qualifiers": [
+    "friday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Friday",
+    "date": "2026-11-06",
+    "time": "15:00"
+   }
+  },
+  {
+   "id": "ev_standup",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Daily Standup"
+    },
+    {
+     "text": "Standup"
+    },
+    {
+     "text": "Stand-up"
+    }
+   ],
+   "qualifiers": [],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Monday",
+    "date": "2026-11-02",
+    "time": "09:00"
+   }
+  },
+  {
+   "id": "ev_demo",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Product Demo"
+    }
+   ],
+   "qualifiers": [
+    "wednesday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Wednesday",
+    "date": "2026-11-04",
+    "time": "16:00"
+   }
+  },
+  {
+   "id": "ev_onboarding",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Onboarding Session"
+    },
+    {
+     "text": "Onboarding"
+    }
+   ],
+   "qualifiers": [
+    "tuesday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Tuesday",
+    "date": "2026-11-03",
+    "time": "10:30"
+   }
+  },
+  {
+   "id": "ev_budget",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Budget Planning"
+    }
+   ],
+   "qualifiers": [
+    "thursday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Thursday",
+    "date": "2026-11-05",
+    "time": "13:00"
+   }
+  },
+  {
+   "id": "ev_jon_bday",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Jon's Birthday Dinner"
+    }
+   ],
+   "qualifiers": [
+    "friday"
+   ],
+   "related": {
+    "calendar": "cal_personal"
+   },
+   "attrs": {
+    "weekday": "Friday",
+    "date": "2026-11-06",
+    "time": "19:00"
+   }
+  },
+  {
+   "id": "ev_john_bday",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "John's Birthday Dinner"
+    }
+   ],
+   "qualifiers": [
+    "saturday"
+   ],
+   "related": {
+    "calendar": "cal_personal"
+   },
+   "attrs": {
+    "weekday": "Saturday",
+    "date": "2026-11-07",
+    "time": "19:00"
+   }
+  },
+  {
+   "id": "jev_teirei_mon",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "チーム定例",
+     "reading": "ちーむていれい"
+    }
+   ],
+   "qualifiers": [
+    "月曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "月曜",
+    "date": "2026-11-02",
+    "time": "10:00"
+   }
+  },
+  {
+   "id": "jev_teirei_thu",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "チーム定例",
+     "reading": "ちーむていれい"
+    }
+   ],
+   "qualifiers": [
+    "木曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "木曜",
+    "date": "2026-11-05",
+    "time": "10:00"
+   }
+  },
+  {
+   "id": "jev_design",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "デザインレビュー",
+     "reading": "でざいんれびゅー"
+    },
+    {
+     "text": "デザレビ",
+     "reading": "でざれび"
+    }
+   ],
+   "qualifiers": [
+    "火曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "火曜",
+    "date": "2026-11-03",
+    "time": "14:00"
+   }
+  },
+  {
+   "id": "jev_kouen_fri",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "講演",
+     "reading": "こうえん"
+    }
+   ],
+   "qualifiers": [
+    "金曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "金曜",
+    "date": "2026-11-06",
+    "time": "18:00"
+   }
+  },
+  {
+   "id": "jev_kouen_sat",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "公演",
+     "reading": "こうえん"
+    }
+   ],
+   "qualifiers": [
+    "土曜"
+   ],
+   "related": {
+    "calendar": "cal_personal"
+   },
+   "attrs": {
+    "weekday": "土曜",
+    "date": "2026-11-07",
+    "time": "18:00"
+   }
+  },
+  {
+   "id": "jev_tanaoroshi",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "在庫棚卸",
+     "reading": "ざいこたなおろし"
+    }
+   ],
+   "qualifiers": [
+    "水曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "水曜",
+    "date": "2026-11-04",
+    "time": "09:00"
+   }
+  },
+  {
+   "id": "jev_setsumeikai",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "製品説明会",
+     "reading": "せいひんせつめいかい"
+    }
+   ],
+   "qualifiers": [
+    "水曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "水曜",
+    "date": "2026-11-04",
+    "time": "15:00"
+   }
+  },
+  {
+   "id": "jev_zensha",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "全社ミーティング",
+     "reading": "ぜんしゃみーてぃんぐ"
+    },
+    {
+     "text": "全社MTG",
+     "reading": "ぜんしゃみーてぃんぐ"
+    }
+   ],
+   "qualifiers": [
+    "金曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "金曜",
+    "date": "2026-11-06",
+    "time": "16:00"
+   }
+  },
+  {
+   "id": "jev_torihiki",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "取引先打ち合わせ",
+     "reading": "とりひきさきうちあわせ"
+    },
+    {
+     "text": "取引先打合せ",
+     "reading": "とりひきさきうちあわせ"
+    },
+    {
+     "text": "取引先打ち合せ",
+     "reading": "とりひきさきうちあわせ"
+    }
+   ],
+   "qualifiers": [
+    "火曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "火曜",
+    "date": "2026-11-03",
+    "time": "11:00"
+   }
+  },
+  {
+   "id": "jev_yosan",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "予算会議",
+     "reading": "よさんかいぎ"
+    }
+   ],
+   "qualifiers": [
+    "木曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "木曜",
+    "date": "2026-11-05",
+    "time": "13:00"
+   }
+  },
+  {
+   "id": "jev_kenshu",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "新人研修",
+     "reading": "しんじんけんしゅう"
+    },
+    {
+     "text": "研修",
+     "reading": "けんしゅう"
+    }
+   ],
+   "qualifiers": [
+    "月曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "月曜",
+    "date": "2026-11-02",
+    "time": "13:00"
+   }
+  },
+  {
+   "id": "jev_kangeikai",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "歓迎会",
+     "reading": "かんげいかい"
+    }
+   ],
+   "qualifiers": [
+    "金曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "金曜",
+    "date": "2026-11-06",
+    "time": "19:00"
+   }
+  },
+  {
+   "id": "cal_work",
+   "type": "CalendarEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Work"
+    },
+    {
+     "text": "仕事",
+     "reading": "しごと"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "cal_personal",
+   "type": "CalendarEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Personal"
+    },
+    {
+     "text": "プライベート",
+     "reading": "ぷらいべーと"
+    }
+   ],
+   "qualifiers": [],
+   "related": {},
+   "attrs": {}
+  },
+  {
+   "id": "ev_vendor_tue",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Vendor Sync"
+    }
+   ],
+   "qualifiers": [
+    "tuesday",
+    "tue"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Tuesday",
+    "date": "2026-11-10",
+    "time": "11:00"
+   }
+  },
+  {
+   "id": "ev_vendor_fri",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Vendor Sync"
+    }
+   ],
+   "qualifiers": [
+    "friday",
+    "fri"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Friday",
+    "date": "2026-11-13",
+    "time": "11:00"
+   }
+  },
+  {
+   "id": "ev_roadmap",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Roadmap Review"
+    },
+    {
+     "text": "Roadmap"
+    }
+   ],
+   "qualifiers": [
+    "monday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Monday",
+    "date": "2026-11-09",
+    "time": "10:00"
+   }
+  },
+  {
+   "id": "ev_security",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Security Audit"
+    }
+   ],
+   "qualifiers": [
+    "tuesday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Tuesday",
+    "date": "2026-11-10",
+    "time": "14:00"
+   }
+  },
+  {
+   "id": "ev_hiring",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Hiring Panel"
+    }
+   ],
+   "qualifiers": [
+    "wednesday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Wednesday",
+    "date": "2026-11-11",
+    "time": "13:00"
+   }
+  },
+  {
+   "id": "ev_retro",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Launch Retro"
+    },
+    {
+     "text": "Retro"
+    }
+   ],
+   "qualifiers": [
+    "thursday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Thursday",
+    "date": "2026-11-12",
+    "time": "16:00"
+   }
+  },
+  {
+   "id": "ev_boardprep",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Board Prep"
+    }
+   ],
+   "qualifiers": [
+    "friday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Friday",
+    "date": "2026-11-13",
+    "time": "09:00"
+   }
+  },
+  {
+   "id": "ev_customer",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Customer Call"
+    }
+   ],
+   "qualifiers": [
+    "monday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Monday",
+    "date": "2026-11-09",
+    "time": "15:00"
+   }
+  },
+  {
+   "id": "ev_offsite",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Offsite Planning"
+    },
+    {
+     "text": "Offsite"
+    }
+   ],
+   "qualifiers": [
+    "wednesday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Wednesday",
+    "date": "2026-11-11",
+    "time": "10:00"
+   }
+  },
+  {
+   "id": "ev_compliance",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Compliance Training"
+    },
+    {
+     "text": "Compliance"
+    }
+   ],
+   "qualifiers": [
+    "thursday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Thursday",
+    "date": "2026-11-12",
+    "time": "09:30"
+   }
+  },
+  {
+   "id": "ev_bryce_party",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Bryce's Farewell Party"
+    }
+   ],
+   "qualifiers": [
+    "friday"
+   ],
+   "related": {
+    "calendar": "cal_personal"
+   },
+   "attrs": {
+    "weekday": "Friday",
+    "date": "2026-11-13",
+    "time": "18:00"
+   }
+  },
+  {
+   "id": "ev_brice_party",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Brice's Farewell Party"
+    }
+   ],
+   "qualifiers": [
+    "saturday"
+   ],
+   "related": {
+    "calendar": "cal_personal"
+   },
+   "attrs": {
+    "weekday": "Saturday",
+    "date": "2026-11-14",
+    "time": "18:00"
+   }
+  },
+  {
+   "id": "ev_designsync_mon",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Design Sync"
+    }
+   ],
+   "qualifiers": [
+    "monday",
+    "mon"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Monday",
+    "date": "2026-11-16",
+    "time": "11:00"
+   }
+  },
+  {
+   "id": "ev_designsync_wed",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Design Sync"
+    }
+   ],
+   "qualifiers": [
+    "wednesday",
+    "wed"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Wednesday",
+    "date": "2026-11-18",
+    "time": "11:00"
+   }
+  },
+  {
+   "id": "ev_sprint",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Sprint Planning"
+    },
+    {
+     "text": "Sprint Plan"
+    }
+   ],
+   "qualifiers": [
+    "monday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Monday",
+    "date": "2026-11-16",
+    "time": "09:00"
+   }
+  },
+  {
+   "id": "ev_townhall",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Quarterly Town Hall"
+    },
+    {
+     "text": "Town Hall"
+    }
+   ],
+   "qualifiers": [
+    "tuesday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Tuesday",
+    "date": "2026-11-17",
+    "time": "16:00"
+   }
+  },
+  {
+   "id": "ev_migration",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Data Migration"
+    }
+   ],
+   "qualifiers": [
+    "wednesday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Wednesday",
+    "date": "2026-11-18",
+    "time": "20:00"
+   }
+  },
+  {
+   "id": "ev_partner",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Partner Workshop"
+    }
+   ],
+   "qualifiers": [
+    "thursday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Thursday",
+    "date": "2026-11-19",
+    "time": "13:00"
+   }
+  },
+  {
+   "id": "ev_a11y",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Accessibility Review"
+    },
+    {
+     "text": "A11y Review"
+    }
+   ],
+   "qualifiers": [
+    "tuesday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Tuesday",
+    "date": "2026-11-17",
+    "time": "10:00"
+   }
+  },
+  {
+   "id": "ev_debrief",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Interview Debrief"
+    },
+    {
+     "text": "Debrief"
+    }
+   ],
+   "qualifiers": [
+    "friday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Friday",
+    "date": "2026-11-20",
+    "time": "15:00"
+   }
+  },
+  {
+   "id": "ev_kickoff",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Project Kickoff"
+    },
+    {
+     "text": "Kickoff"
+    }
+   ],
+   "qualifiers": [
+    "monday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Monday",
+    "date": "2026-11-16",
+    "time": "14:00"
+   }
+  },
+  {
+   "id": "ev_pottery",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Pottery Class"
+    }
+   ],
+   "qualifiers": [
+    "saturday"
+   ],
+   "related": {
+    "calendar": "cal_personal"
+   },
+   "attrs": {
+    "weekday": "Saturday",
+    "date": "2026-11-21",
+    "time": "10:00"
+   }
+  },
+  {
+   "id": "ev_neil_lunch",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Neil's Retirement Lunch"
+    }
+   ],
+   "qualifiers": [
+    "thursday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Thursday",
+    "date": "2026-11-19",
+    "time": "12:00"
+   }
+  },
+  {
+   "id": "ev_neal_lunch",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Neal's Retirement Lunch"
+    }
+   ],
+   "qualifiers": [
+    "friday"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "Friday",
+    "date": "2026-11-20",
+    "time": "12:00"
+   }
+  },
+  {
+   "id": "jev_bukai_tue",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "部会",
+     "reading": "ぶかい"
+    }
+   ],
+   "qualifiers": [
+    "火曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "火曜",
+    "date": "2026-11-10",
+    "time": "10:00"
+   }
+  },
+  {
+   "id": "jev_bukai_fri",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "部会",
+     "reading": "ぶかい"
+    }
+   ],
+   "qualifiers": [
+    "金曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "金曜",
+    "date": "2026-11-13",
+    "time": "10:00"
+   }
+  },
+  {
+   "id": "jev_roadmap",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "ロードマップ確認",
+     "reading": "ろーどまっぷかくにん"
+    },
+    {
+     "text": "ロドマ確認",
+     "reading": "ろどまかくにん"
+    }
+   ],
+   "qualifiers": [
+    "月曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "月曜",
+    "date": "2026-11-09",
+    "time": "11:00"
+   }
+  },
+  {
+   "id": "jev_security",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "セキュリティ監査",
+     "reading": "せきゅりてぃかんさ"
+    },
+    {
+     "text": "セキュ監査",
+     "reading": "せきゅかんさ"
+    }
+   ],
+   "qualifiers": [
+    "火曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "火曜",
+    "date": "2026-11-10",
+    "time": "14:00"
+   }
+  },
+  {
+   "id": "jev_saiyou",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "採用面接",
+     "reading": "さいようめんせつ"
+    }
+   ],
+   "qualifiers": [
+    "水曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "水曜",
+    "date": "2026-11-11",
+    "time": "13:00"
+   }
+  },
+  {
+   "id": "jev_furikaeri",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "振り返り会",
+     "reading": "ふりかえりかい"
+    },
+    {
+     "text": "ふりかえり会",
+     "reading": "ふりかえりかい"
+    }
+   ],
+   "qualifiers": [
+    "木曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "木曜",
+    "date": "2026-11-12",
+    "time": "17:00"
+   }
+  },
+  {
+   "id": "jev_yakuin",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "役員会準備",
+     "reading": "やくいんかいじゅんび"
+    }
+   ],
+   "qualifiers": [
+    "金曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "金曜",
+    "date": "2026-11-13",
+    "time": "09:00"
+   }
+  },
+  {
+   "id": "jev_kokyaku",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "顧客定例",
+     "reading": "こきゃくていれい"
+    }
+   ],
+   "qualifiers": [
+    "月曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "月曜",
+    "date": "2026-11-09",
+    "time": "15:00"
+   }
+  },
+  {
+   "id": "jev_gasshuku",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "合宿計画",
+     "reading": "がっしゅくけいかく"
+    }
+   ],
+   "qualifiers": [
+    "水曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "水曜",
+    "date": "2026-11-11",
+    "time": "10:00"
+   }
+  },
+  {
+   "id": "jev_compliance",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "コンプラ研修",
+     "reading": "こんぷらけんしゅう"
+    }
+   ],
+   "qualifiers": [
+    "木曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "木曜",
+    "date": "2026-11-12",
+    "time": "09:30"
+   }
+  },
+  {
+   "id": "jev_seisan_tue",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "精算会",
+     "reading": "せいさんかい"
+    }
+   ],
+   "qualifiers": [
+    "火曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "火曜",
+    "date": "2026-11-10",
+    "time": "18:00"
+   }
+  },
+  {
+   "id": "jev_seisan_thu",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "清算会",
+     "reading": "せいさんかい"
+    }
+   ],
+   "qualifiers": [
+    "木曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "木曜",
+    "date": "2026-11-12",
+    "time": "18:00"
+   }
+  },
+  {
+   "id": "jev_weekly_mon",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "週次レビュー",
+     "reading": "しゅうじれびゅー"
+    }
+   ],
+   "qualifiers": [
+    "月曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "月曜",
+    "date": "2026-11-16",
+    "time": "10:00"
+   }
+  },
+  {
+   "id": "jev_weekly_wed",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "週次レビュー",
+     "reading": "しゅうじれびゅー"
+    }
+   ],
+   "qualifiers": [
+    "水曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "水曜",
+    "date": "2026-11-18",
+    "time": "10:00"
+   }
+  },
+  {
+   "id": "jev_ikou",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "移行作業",
+     "reading": "いこうさぎょう"
+    }
+   ],
+   "qualifiers": [
+    "水曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "水曜",
+    "date": "2026-11-18",
+    "time": "20:00"
+   }
+  },
+  {
+   "id": "jev_choukai",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "全体朝会",
+     "reading": "ぜんたいちょうかい"
+    },
+    {
+     "text": "朝会",
+     "reading": "ちょうかい"
+    }
+   ],
+   "qualifiers": [
+    "月曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "月曜",
+    "date": "2026-11-16",
+    "time": "09:00"
+   }
+  },
+  {
+   "id": "jev_partner",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "パートナー研修",
+     "reading": "ぱーとなーけんしゅう"
+    }
+   ],
+   "qualifiers": [
+    "木曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "木曜",
+    "date": "2026-11-19",
+    "time": "13:00"
+   }
+  },
+  {
+   "id": "jev_access",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "アクセシビリティ確認",
+     "reading": "あくせしびりてぃかくにん"
+    },
+    {
+     "text": "アクセシビリティ",
+     "reading": "あくせしびりてぃ"
+    }
+   ],
+   "qualifiers": [
+    "火曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "火曜",
+    "date": "2026-11-17",
+    "time": "10:00"
+   }
+  },
+  {
+   "id": "jev_mendan",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "面談振り返り",
+     "reading": "めんだんふりかえり"
+    }
+   ],
+   "qualifiers": [
+    "金曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "金曜",
+    "date": "2026-11-20",
+    "time": "15:00"
+   }
+  },
+  {
+   "id": "jev_kickoff",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "キックオフ",
+     "reading": "きっくおふ"
+    }
+   ],
+   "qualifiers": [
+    "月曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "月曜",
+    "date": "2026-11-16",
+    "time": "14:00"
+   }
+  },
+  {
+   "id": "jev_tougei",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "陶芸教室",
+     "reading": "とうげいきょうしつ"
+    }
+   ],
+   "qualifiers": [
+    "土曜"
+   ],
+   "related": {
+    "calendar": "cal_personal"
+   },
+   "attrs": {
+    "weekday": "土曜",
+    "date": "2026-11-21",
+    "time": "10:00"
+   }
+  },
+  {
+   "id": "jev_benkyou",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "勉強会",
+     "reading": "べんきょうかい"
+    }
+   ],
+   "qualifiers": [
+    "水曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "水曜",
+    "date": "2026-11-18",
+    "time": "19:00"
+   }
+  },
+  {
+   "id": "jev_kansou_thu",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "感想会",
+     "reading": "かんそうかい"
+    }
+   ],
+   "qualifiers": [
+    "木曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "木曜",
+    "date": "2026-11-19",
+    "time": "18:00"
+   }
+  },
+  {
+   "id": "jev_kansou_fri",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "歓送会",
+     "reading": "かんそうかい"
+    }
+   ],
+   "qualifiers": [
+    "金曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "金曜",
+    "date": "2026-11-20",
+    "time": "18:00"
+   }
+  },
+  {
+   "id": "ev_maya_party",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Maya's Graduation Party"
+    }
+   ],
+   "qualifiers": [
+    "saturday"
+   ],
+   "related": {
+    "calendar": "cal_personal"
+   },
+   "attrs": {
+    "weekday": "Saturday",
+    "date": "2026-11-14",
+    "time": "17:00"
+   }
+  },
+  {
+   "id": "ev_theo_recital",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Theo's Piano Recital"
+    }
+   ],
+   "qualifiers": [
+    "sunday"
+   ],
+   "related": {
+    "calendar": "cal_personal"
+   },
+   "attrs": {
+    "weekday": "Sunday",
+    "date": "2026-11-15",
+    "time": "15:00"
+   }
+  },
+  {
+   "id": "ev_grandma_lunch",
+   "type": "EventEntity",
+   "locale": "en-US",
+   "forms": [
+    {
+     "text": "Grandma's Birthday Lunch"
+    }
+   ],
+   "qualifiers": [
+    "sunday"
+   ],
+   "related": {
+    "calendar": "cal_personal"
+   },
+   "attrs": {
+    "weekday": "Sunday",
+    "date": "2026-11-22",
+    "time": "12:00"
+   }
+  },
+  {
+   "id": "jev_allhands",
+   "type": "EventEntity",
+   "locale": "ja-JP",
+   "forms": [
+    {
+     "text": "オールハンズ・ミーティング",
+     "reading": "おーるはんずみーてぃんぐ"
+    }
+   ],
+   "qualifiers": [
+    "木曜"
+   ],
+   "related": {
+    "calendar": "cal_work"
+   },
+   "attrs": {
+    "weekday": "木曜",
+    "date": "2026-11-19",
+    "time": "16:00"
+   }
+  }
+ ]
+}

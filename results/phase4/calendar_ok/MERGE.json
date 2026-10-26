@@ -1,0 +1,12 @@
+{
+ "app": "calendar_ok",
+ "carried_over_cases": 648,
+ "carried_over_from": "results/phase3/calendar_ok/raw.json",
+ "carried_over_probes": 149,
+ "carried_over_sha256": "9ca211399b329e336914b1fcdd7ab5ea6b004ad60b2a66da9c0befacb28e470a",
+ "dataset": "v1.2",
+ "remeasured_cases": [],
+ "remeasured_probe_entities": [],
+ "remeasured_probes": 0,
+ "subset_sha256": null
+}

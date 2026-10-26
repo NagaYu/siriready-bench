@@ -1,0 +1,145 @@
+{
+ "bundleIdentifier": "dev.siriready.messages.ok",
+ "cases": [
+  {
+   "caseId": "messages-en-001",
+   "effects": [
+    {
+     "intent": "SendMessageIntent",
+     "params": {
+      "body": "thanks for yesterday"
+     },
+     "target": "c_marcus"
+    }
+   ],
+   "egress": [],
+   "intentAvailable": true,
+   "notes": [],
+   "run": {
+    "ok": true,
+    "targetId": "c_marcus"
+   },
+   "spotlight": {
+    "ids": [
+     "c_marcus"
+    ]
+   },
+   "stringQuery": {
+    "ids": [
+     "c_marcus"
+    ]
+   }
+  },
+  {
+   "caseId": "messages-en-002",
+   "effects": [
+    {
+     "intent": "SendMessageIntent",
+     "params": {
+      "body": "lunch is on me today"
+     },
+     "target": "c_dani"
+    }
+   ],
+   "egress": [],
+   "intentAvailable": true,
+   "notes": [],
+   "run": {
+    "ok": true,
+    "targetId": "c_dani"
+   },
+   "spotlight": {
+    "ids": [
+     "c_dani"
+    ]
+   },
+   "stringQuery": {
+    "ids": [
+     "c_dani"
+    ]
+   }
+  },
+  {
+   "caseId": "messages-en-003",
+   "effects": [
+    {
+     "intent": "SendMessageIntent",
+     "params": {
+      "body": "lunch is on me today"
+     },
+     "target": "c_omar"
+    }
+   ],
+   "egress": [],
+   "intentAvailable": true,
+   "notes": [],
+   "run": {
+    "ok": true,
+    "targetId": "c_omar"
+   },
+   "spotlight": {
+    "ids": [
+     "c_omar"
+    ]
+   },
+   "stringQuery": {
+    "ids": [
+     "c_omar"
+    ]
+   }
+  }
+ ],
+ "device": "iOS Simulator",
+ "indexProbes": [
+  {
+   "entityId": "c_alex",
+   "entityType": "ContactEntity",
+   "ids": [
+    "c_alex"
+   ],
+   "query": "Alex Rivera"
+  },
+  {
+   "entityId": "c_alex",
+   "entityType": "ContactEntity",
+   "ids": [
+    "c_alex"
+   ],
+   "query": "Alex"
+  },
+  {
+   "entityId": "c_anjali",
+   "entityType": "ContactEntity",
+   "ids": [
+    "c_anjali"
+   ],
+   "query": "Anjali Raghunathan"
+  },
+  {
+   "entityId": "c_anjali",
+   "entityType": "ContactEntity",
+   "ids": [
+    "c_anjali"
+   ],
+   "query": "Anjali"
+  },
+  {
+   "entityId": "c_shawn",
+   "entityType": "ContactEntity",
+   "ids": [
+    "c_shawn"
+   ],
+   "query": "Shawn Patel"
+  },
+  {
+   "entityId": "c_shawn",
+   "entityType": "ContactEntity",
+   "ids": [
+    "c_shawn"
+   ],
+   "query": "Shawn"
+  }
+ ],
+ "osVersion": "iOS 27.0.0",
+ "protocolVersion": "siriready-harness-v1"
+}

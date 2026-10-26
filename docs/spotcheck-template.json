@@ -1,0 +1,251 @@
+{
+ "protocol_version": "spotcheck-v1",
+ "sample": false,
+ "device": "",
+ "os": "",
+ "locale": "",
+ "siri_settings": "",
+ "recorded_on": "",
+ "results": [
+  {
+   "case_id": "messages-en-022",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "messages-en-135",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "messages-en-155",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "messages-en-162",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "messages-en-272",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "messages-en-081",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "messages-en-295",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "messages-ja-011",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "messages-ja-136",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "messages-ja-149",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "messages-ja-259",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "messages-ja-071",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "messages-ja-280",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "messages-ja-093",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "calendar-en-026",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "calendar-en-041",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "calendar-en-155",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "calendar-en-060",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "calendar-en-269",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "calendar-en-085",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "calendar-en-100",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "calendar-ja-027",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "calendar-ja-048",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "calendar-ja-252",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "calendar-ja-260",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "calendar-ja-273",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "calendar-ja-084",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "calendar-ja-296",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "calendar-ja-064",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  },
+  {
+   "case_id": "calendar-ja-170",
+   "input_mode": "",
+   "reached_intent": null,
+   "resolved_entity": null,
+   "success": false,
+   "notes": ""
+  }
+ ]
+}

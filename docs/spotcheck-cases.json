@@ -1,0 +1,646 @@
+{
+ "dataset": "v1.2",
+ "seed": 2702,
+ "cases": [
+  {
+   "case_id": "messages-en-022",
+   "app_id": "messages",
+   "locale": "en-US",
+   "tags": [
+    "basic"
+   ],
+   "utterance": "Write a draft to Marcus Lindqvist: call me when you land",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "DraftMessageIntent",
+    "entity_id": "c_marcus",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "messages-en-135",
+   "app_id": "messages",
+   "locale": "en-US",
+   "tags": [
+    "noise"
+   ],
+   "utterance": "Could you please 下書き a message to Mei Lindgren saying see you at the station",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "DraftMessageIntent",
+    "entity_id": "c_mei",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "messages-en-155",
+   "app_id": "messages",
+   "locale": "en-US",
+   "tags": [
+    "alias"
+   ],
+   "utterance": "Could you please draft a message to Mei saying I'm running ten minutes late",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "DraftMessageIntent",
+    "entity_id": "c_mei",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "messages-en-162",
+   "app_id": "messages",
+   "locale": "en-US",
+   "tags": [
+    "same_name_qualified"
+   ],
+   "utterance": "Could you please show my chat with Chris Moreno my neighbor",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "OpenConversationIntent",
+    "entity_id": "conv_c_chris_neighbor",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "messages-en-272",
+   "app_id": "messages",
+   "locale": "en-US",
+   "tags": [
+    "homophone"
+   ],
+   "utterance": "Hey, tell Aiden Farrell from legal: the slides are ready",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "SendMessageIntent",
+    "entity_id": "c_aiden_farrell",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "messages-en-081",
+   "app_id": "messages",
+   "locale": "en-US",
+   "tags": [
+    "screen"
+   ],
+   "utterance": "Open the third chat",
+   "state": {
+    "screen": "conversation_list",
+    "visible_entities": [
+     "conv_c_kate",
+     "conv_c_marcus",
+     "conv_c_dani"
+    ],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "OpenConversationIntent",
+    "entity_id": "conv_c_dani",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "messages-en-295",
+   "app_id": "messages",
+   "locale": "en-US",
+   "tags": [
+    "multi_turn"
+   ],
+   "utterance": "Hey, send them another one saying the slides are ready",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": {
+     "utterance": "Send Rosa Delgado a message saying thanks for yesterday",
+     "intent": "SendMessageIntent",
+     "entity_id": "c_rosa"
+    }
+   },
+   "expected": {
+    "intent": "SendMessageIntent",
+    "entity_id": "c_rosa",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "messages-ja-011",
+   "app_id": "messages",
+   "locale": "ja-JP",
+   "tags": [
+    "basic"
+   ],
+   "utterance": "藤井蓮にメッセージで「資料できたよ」って伝えて",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "SendMessageIntent",
+    "entity_id": "j_fujii",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "messages-ja-136",
+   "app_id": "messages",
+   "locale": "ja-JP",
+   "tags": [
+    "noise"
+   ],
+   "utterance": "すみません、下書きにして、平野紗季宛ての「昨日はありがとう」",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "DraftMessageIntent",
+    "entity_id": "j_hirano",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "messages-ja-149",
+   "app_id": "messages",
+   "locale": "ja-JP",
+   "tags": [
+    "alias"
+   ],
+   "utterance": "渡辺翔に「資料できたよ」って送ってもらえる？",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "SendMessageIntent",
+    "entity_id": "j_watanabe",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "messages-ja-259",
+   "app_id": "messages",
+   "locale": "ja-JP",
+   "tags": [
+    "same_name_qualified"
+   ],
+   "utterance": "ねえ、ヨガの小林葵とのトークを開いて",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "OpenConversationIntent",
+    "entity_id": "conv_j_kobayashi_yoga",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "messages-ja-071",
+   "app_id": "messages",
+   "locale": "ja-JP",
+   "tags": [
+    "homophone"
+   ],
+   "utterance": "瑞希とのトークを開いて",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "OpenConversationIntent",
+    "entity_id": null,
+    "resolution": "disambiguate",
+    "candidates": [
+     "conv_j_takase",
+     "conv_j_mori"
+    ]
+   }
+  },
+  {
+   "case_id": "messages-ja-280",
+   "app_id": "messages",
+   "locale": "ja-JP",
+   "tags": [
+    "screen"
+   ],
+   "utterance": "ねえ、2番目の会話を開いて",
+   "state": {
+    "screen": "conversation_list",
+    "visible_entities": [
+     "conv_j_hara",
+     "conv_j_kanno",
+     "conv_j_shibata"
+    ],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "OpenConversationIntent",
+    "entity_id": "conv_j_kanno",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "messages-ja-093",
+   "app_id": "messages",
+   "locale": "ja-JP",
+   "tags": [
+    "multi_turn"
+   ],
+   "utterance": "その人に「充電器持ってきて」って送って",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": {
+     "utterance": "齊藤健とのトークを開いて",
+     "intent": "OpenConversationIntent",
+     "entity_id": "conv_j_saito"
+    }
+   },
+   "expected": {
+    "intent": "SendMessageIntent",
+    "entity_id": "j_saito",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "calendar-en-026",
+   "app_id": "calendar",
+   "locale": "en-US",
+   "tags": [
+    "basic"
+   ],
+   "utterance": "Share Onboarding Session with Lena",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "ShareEventIntent",
+    "entity_id": "ev_onboarding",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "calendar-en-041",
+   "app_id": "calendar",
+   "locale": "en-US",
+   "tags": [
+    "noise"
+   ],
+   "utterance": "Move Onboarding Session to 5pm, よろしく",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "UpdateEventIntent",
+    "entity_id": "ev_onboarding",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "calendar-en-155",
+   "app_id": "calendar",
+   "locale": "en-US",
+   "tags": [
+    "alias"
+   ],
+   "utterance": "I need you to push Compliance to 1pm",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "UpdateEventIntent",
+    "entity_id": "ev_compliance",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "calendar-en-060",
+   "app_id": "calendar",
+   "locale": "en-US",
+   "tags": [
+    "same_name_qualified"
+   ],
+   "utterance": "Delete Monday's Team Sync",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "DeleteEventIntent",
+    "entity_id": "ev_sync_mon",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "calendar-en-269",
+   "app_id": "calendar",
+   "locale": "en-US",
+   "tags": [
+    "homophone"
+   ],
+   "utterance": "Cancel Neal's Retirement Lunch, thanks",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "DeleteEventIntent",
+    "entity_id": null,
+    "resolution": "disambiguate",
+    "candidates": [
+     "ev_neil_lunch",
+     "ev_neal_lunch"
+    ]
+   }
+  },
+  {
+   "case_id": "calendar-en-085",
+   "app_id": "calendar",
+   "locale": "en-US",
+   "tags": [
+    "screen"
+   ],
+   "utterance": "Push this to 5pm",
+   "state": {
+    "screen": "event_detail",
+    "visible_entities": [
+     "ev_onboarding"
+    ],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "UpdateEventIntent",
+    "entity_id": "ev_onboarding",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "calendar-en-100",
+   "app_id": "calendar",
+   "locale": "en-US",
+   "tags": [
+    "multi_turn"
+   ],
+   "utterance": "Actually, cancel it",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": {
+     "utterance": "Move Brake Inspection to 3pm",
+     "intent": "UpdateEventIntent",
+     "entity_id": "ev_brake"
+    }
+   },
+   "expected": {
+    "intent": "DeleteEventIntent",
+    "entity_id": "ev_brake",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "calendar-ja-027",
+   "app_id": "calendar",
+   "locale": "ja-JP",
+   "tags": [
+    "basic"
+   ],
+   "utterance": "在庫棚卸を吉田さんに共有して",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "ShareEventIntent",
+    "entity_id": "jev_tanaoroshi",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "calendar-ja-048",
+   "app_id": "calendar",
+   "locale": "ja-JP",
+   "tags": [
+    "noise"
+   ],
+   "utterance": "開いて、デザインレビューを",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "OpenEventIntent",
+    "entity_id": "jev_design",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "calendar-ja-252",
+   "app_id": "calendar",
+   "locale": "ja-JP",
+   "tags": [
+    "alias"
+   ],
+   "utterance": "アクセシビリティの予定を削除して、お願い",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "DeleteEventIntent",
+    "entity_id": "jev_access",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "calendar-ja-260",
+   "app_id": "calendar",
+   "locale": "ja-JP",
+   "tags": [
+    "same_name_qualified"
+   ],
+   "utterance": "月曜の週次レビューを吉田さんに共有して、お願い",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "ShareEventIntent",
+    "entity_id": "jev_weekly_mon",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "calendar-ja-273",
+   "app_id": "calendar",
+   "locale": "ja-JP",
+   "tags": [
+    "homophone"
+   ],
+   "utterance": "金曜の歓送会をキャンセルして、お願い",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "DeleteEventIntent",
+    "entity_id": "jev_kansou_fri",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "calendar-ja-084",
+   "app_id": "calendar",
+   "locale": "ja-JP",
+   "tags": [
+    "screen"
+   ],
+   "utterance": "この予定をキャンセルして",
+   "state": {
+    "screen": "event_detail",
+    "visible_entities": [
+     "jev_kenshu"
+    ],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "DeleteEventIntent",
+    "entity_id": "jev_kenshu",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "calendar-ja-296",
+   "app_id": "calendar",
+   "locale": "ja-JP",
+   "tags": [
+    "multi_turn"
+   ],
+   "utterance": "やっぱりそれをキャンセルして、お願い",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": {
+     "utterance": "全体朝会を17時に変更して",
+     "intent": "UpdateEventIntent",
+     "entity_id": "jev_choukai"
+    }
+   },
+   "expected": {
+    "intent": "DeleteEventIntent",
+    "entity_id": "jev_choukai",
+    "resolution": "execute",
+    "candidates": []
+   }
+  },
+  {
+   "case_id": "calendar-ja-064",
+   "app_id": "calendar",
+   "locale": "ja-JP",
+   "tags": [
+    "same_name_ambiguous"
+   ],
+   "utterance": "チーム定例を15時に変更して",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "UpdateEventIntent",
+    "entity_id": null,
+    "resolution": "disambiguate",
+    "candidates": [
+     "jev_teirei_mon",
+     "jev_teirei_thu"
+    ]
+   }
+  },
+  {
+   "case_id": "calendar-ja-170",
+   "app_id": "calendar",
+   "locale": "ja-JP",
+   "tags": [
+    "homophone"
+   ],
+   "utterance": "せいさんかいの予定を開いておいてほしい",
+   "state": {
+    "screen": null,
+    "visible_entities": [],
+    "prior_turn": null
+   },
+   "expected": {
+    "intent": "OpenEventIntent",
+    "entity_id": null,
+    "resolution": "disambiguate",
+    "candidates": [
+     "jev_seisan_tue",
+     "jev_seisan_thu"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Synthetic SiriKit intent definition stub for SiriReady Bench (not a real app). -->
+<plist version="1.0">
+<dict>
+    <key>INIntentDefinitionModelVersion</key>
+    <string>1.2</string>
+    <key>INIntents</key>
+    <array>
+        <dict>
+            <key>INIntentName</key>
+            <string>ShareEvent</string>
+            <key>INIntentCategory</key>
+            <string>share</string>
+        </dict>
+    </array>
+</dict>
+</plist>

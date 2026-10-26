@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = "1";
+	classes = {
+	};
+	objectVersion = "77";
+	objects = {
+		"111E6C7FF7836EE05F5F2BA5" = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = "27.0";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = "5.0";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				ONLY_ACTIVE_ARCH = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				ENABLE_TESTABILITY = NO;
+			};
+			name = Release;
+		};
+		"14F6EDC3B1C139328BB03D1F" = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ../../Harness;
+			sourceTree = "<group>";
+		};
+		"1D5EE0218DB642290FF1A31F" = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.siriready.messages.ok;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MessagesOK;
+				MARKETING_VERSION = "1.0";
+				CURRENT_PROJECT_VERSION = "1";
+				ENABLE_PREVIEWS = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Debug;
+		};
+		"2348F2934C9DF8557F0AE16A" = {
+			isa = PBXTargetDependency;
+			target = F13DBA9F08B578D2582EA5CA;
+			targetProxy = "77D27A12D61C14F0342B8346";
+		};
+		"30BE8625CE1D982530D08645" = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = "2147483647";
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = "0";
+		};
+		"4C6E6FA8B4B3A145844B1576" = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"1D5EE0218DB642290FF1A31F",
+				"6F592458519853FD343551ED",
+			);
+			defaultConfigurationIsVisible = "0";
+			defaultConfigurationName = Release;
+		};
+		"4D1C58284E646BD4FFFA838E" = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ../Shared;
+			sourceTree = "<group>";
+		};
+		"501AE0DD19016F1BF8D3BC8F" = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.siriready.messages.ok.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				GENERATE_INFOPLIST_FILE = YES;
+				TEST_TARGET_NAME = MessagesOK;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				MARKETING_VERSION = "1.0";
+				CURRENT_PROJECT_VERSION = "1";
+			};
+			name = Release;
+		};
+		"590CC399448088E5D830FEA3" = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = "2147483647";
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = "0";
+		};
+		"5C06B9DCE29707CAE8722717" = {
+			isa = PBXGroup;
+			children = (
+				B933005F5C4D4D6F70301588,
+				"14F6EDC3B1C139328BB03D1F",
+				"4D1C58284E646BD4FFFA838E",
+				"6BDA12D2C43FDE5D2319AAED",
+				"6220134FC32307C4A1A6E4F9",
+			);
+			sourceTree = "<group>";
+		};
+		"6220134FC32307C4A1A6E4F9" = {
+			isa = PBXGroup;
+			children = (
+				DD44A1881F0E2A319200179E,
+				C1172909B7243B1565512E7E,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		"6BDA12D2C43FDE5D2319AAED" = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ../../Common;
+			sourceTree = "<group>";
+		};
+		"6F592458519853FD343551ED" = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.siriready.messages.ok;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MessagesOK;
+				MARKETING_VERSION = "1.0";
+				CURRENT_PROJECT_VERSION = "1";
+				ENABLE_PREVIEWS = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Release;
+		};
+		"77D27A12D61C14F0342B8346" = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3FADF2F4E72FF9AFA747DE8;
+			proxyType = "1";
+			remoteGlobalIDString = F13DBA9F08B578D2582EA5CA;
+			remoteInfo = MessagesOK;
+		};
+		A319C86A13B23A5BF3BEDAD2 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = "2147483647";
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = "0";
+		};
+		AFD431B39B6EEAD4D9470851 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = "2147483647";
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = "0";
+		};
+		B933005F5C4D4D6F70301588 = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = App;
+			sourceTree = "<group>";
+		};
+		C1172909B7243B1565512E7E = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.cfbundle;
+			includeInIndex = "0";
+			path = MessagesOKUITests.xctest;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D15A43658BBE8E71BFE59524 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = "27.0";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = "5.0";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				ENABLE_TESTABILITY = YES;
+			};
+			name = Debug;
+		};
+		D3FADF2F4E72FF9AFA747DE8 = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = "1";
+				LastSwiftUpdateCheck = "2710";
+				LastUpgradeCheck = "2710";
+				TargetAttributes = {
+					F13DBA9F08B578D2582EA5CA = {
+						CreatedOnToolsVersion = "27.1";
+					};
+					DE919A5B12E65E6F0B5C8D45 = {
+						CreatedOnToolsVersion = "27.1";
+						TestTargetID = F13DBA9F08B578D2582EA5CA;
+					};
+				};
+			};
+			buildConfigurationList = DD52370BF50770E1FA39EE28;
+			developmentRegion = en;
+			hasScannedForEncodings = "0";
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = "5C06B9DCE29707CAE8722717";
+			minimizedProjectReferenceProxies = "1";
+			preferredProjectObjectVersion = "77";
+			productRefGroup = "6220134FC32307C4A1A6E4F9";
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F13DBA9F08B578D2582EA5CA,
+				DE919A5B12E65E6F0B5C8D45,
+			);
+		};
+		DD44A1881F0E2A319200179E = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = "0";
+			path = MessagesOK.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD52370BF50770E1FA39EE28 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D15A43658BBE8E71BFE59524,
+				"111E6C7FF7836EE05F5F2BA5",
+			);
+			defaultConfigurationIsVisible = "0";
+			defaultConfigurationName = Release;
+		};
+		DE919A5B12E65E6F0B5C8D45 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3BA645DC915E2A03D398A95;
+			buildPhases = (
+				"30BE8625CE1D982530D08645",
+				"590CC399448088E5D830FEA3",
+				F1919619FD9D92F450AE5018,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				"2348F2934C9DF8557F0AE16A",
+			);
+			fileSystemSynchronizedGroups = (
+				"14F6EDC3B1C139328BB03D1F",
+			);
+			name = MessagesOKUITests;
+			productName = MessagesOKUITests;
+			productReference = C1172909B7243B1565512E7E;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E3BA645DC915E2A03D398A95 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1EBE89891B5D44C5F820D75,
+				"501AE0DD19016F1BF8D3BC8F",
+			);
+			defaultConfigurationIsVisible = "0";
+			defaultConfigurationName = Release;
+		};
+		E46A7D1257F0CD6596441DD5 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = "2147483647";
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = "0";
+		};
+		F13DBA9F08B578D2582EA5CA = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "4C6E6FA8B4B3A145844B1576";
+			buildPhases = (
+				AFD431B39B6EEAD4D9470851,
+				E46A7D1257F0CD6596441DD5,
+				A319C86A13B23A5BF3BEDAD2,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B933005F5C4D4D6F70301588,
+				"4D1C58284E646BD4FFFA838E",
+				"6BDA12D2C43FDE5D2319AAED",
+			);
+			name = MessagesOK;
+			productName = MessagesOK;
+			productReference = DD44A1881F0E2A319200179E;
+			productType = "com.apple.product-type.application";
+		};
+		F1919619FD9D92F450AE5018 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = "2147483647";
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = "0";
+		};
+		F1EBE89891B5D44C5F820D75 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.siriready.messages.ok.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				GENERATE_INFOPLIST_FILE = YES;
+				TEST_TARGET_NAME = MessagesOK;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				MARKETING_VERSION = "1.0";
+				CURRENT_PROJECT_VERSION = "1";
+			};
+			name = Debug;
+		};
+	};
+	rootObject = D3FADF2F4E72FF9AFA747DE8;
+}

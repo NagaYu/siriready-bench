@@ -1,0 +1,12 @@
+{
+ "app": "calendar_broken",
+ "carried_over_cases": 543,
+ "carried_over_from": "results/phase3/calendar_broken/raw.json",
+ "carried_over_probes": 149,
+ "carried_over_sha256": "37880462ca3a2b79998bea6e4c97226e9c36790c46bf05be57198f8d09507d51",
+ "dataset": "v1.2",
+ "remeasured_cases": [],
+ "remeasured_probe_entities": [],
+ "remeasured_probes": 0,
+ "subset_sha256": null
+}

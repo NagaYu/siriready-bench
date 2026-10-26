@@ -1,0 +1,15 @@
+{
+  "label": "Dataset v1.2",
+  "results_dir": "results/phase4",
+  "dataset": "v1.2",
+  "measured_on": "2026-10-26",
+  "xcode": "Xcode 27.1 (27A9275)",
+  "sdk": "iOS 27.1 SDK (iphonesimulator27.1, 24A94232)",
+  "runtime": "iOS 27.0 simulator runtime (24A434)",
+  "device": "iPhone 17 (simulator)",
+  "host": "macOS 27.0.1 (26A434), Apple silicon",
+  "signing": "none (Sign to Run Locally; no development team)",
+  "harness_protocol": "siriready-harness-v1",
+  "resolver": "mock-rule-v0",
+  "note": "Four reference apps, 624 (messages) and 648 (calendar) cases. The renamed people's cases and Spotlight probes were measured with the v1.2 seeds; every other observation comes from the identical v1.1 cases measured on the same day (per-app record: results/phase4/<app>/MERGE.json). Earlier dataset versions and their raw results are kept in the development repository because they contain names replaced before publication; v1.2 differs from v1.1 only by those renames and its scores are identical."
+}
